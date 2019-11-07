@@ -1,1 +1,30 @@
 // Navigation Styles here
+.navs{
+    .FlexMe(flex, row, space-around, center);
+    section{
+        width:50%;
+        padding: 2vh 0;
+        @media @mobile{
+            .FlexMe(flex, row, space-around, center);
+            width:100%
+
+        }
+    }
+    .Navs{
+        .FlexMe(flex, row, space-around, center);
+        a{
+            font-size:1.5rem;
+            .RemTextDec();
+            @media @mobile{
+                
+            }
+        }
+
+    }
+    border-bottom: 1px dashed lightgray;
+    
+    @media @mobile{
+        .FlexMe(flex, column, center, center);
+    }
+
+}
