@@ -1,1 +1,24 @@
 // Mixins in here
+.FlexMe (@fm, @fd, @just, @ali){
+    display: @fm;
+    flex-direction: @fd;
+    justify-content: @just;
+    align-items: @ali;
+}
+.RemTextDec(){
+    text-decoration: none;
+    color:black;
+}
+.Button-Styles(){
+    // border:1px solid black;
+    font-size: 2.2rem;
+    text-align: center;
+    padding:1.2rem;
+    background-color:teal ;
+    color:white;
+    border-radius: 18px;
+    &:hover{
+        background-color:lighten(teal, 5%) ;
+        color:darken(white, 55%)
+    }
+}
